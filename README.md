@@ -6,3 +6,7 @@ this is a citySelection view which include the  base area infos of citys in each
 
 
 if you have any problem , you can get me by mail : jasonzue@126.com
+
+## Demo
+ 
+![](https://github.com/jasonzue/CitySelection/blob/master/proview.gif)
