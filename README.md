@@ -9,4 +9,4 @@ if you have any problem , you can get me by mail : jasonzue@126.com
 
 ## Demo
  
-![](https://github.com/jasonzue/CitySelection/blob/master/proview.gif)
+![](https://github.com/jasonzue/CitySelection/blob/master/proview.gif?raw=true)
