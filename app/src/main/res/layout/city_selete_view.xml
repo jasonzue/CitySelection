@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:weightSum="3"
+    android:orientation="horizontal"
+    android:layout_height="match_parent">
+
+
+    <ListView
+        android:id="@+id/first_lv"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:divider="@null"
+        android:dividerHeight="1dp"
+        android:background="@color/material_blue_grey_950"
+        android:layout_height="fill_parent" />
+
+    <ListView
+        android:id="@+id/second_lv"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:divider="@null"
+        android:dividerHeight="1dp"
+        android:background="@color/material_blue_grey_800"
+        android:layout_height="fill_parent" />
+
+    <ListView
+        android:id="@+id/third_lv"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:divider="@null"
+        android:dividerHeight="1dp"
+        android:background="@color/material_blue_grey_900"
+        android:layout_height="fill_parent" />
+
+
+</LinearLayout>

@@ -1,38 +1,36 @@
 package com.jasonzue.cityselection;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.support.v7.app.ActionBarActivity;
+import android.widget.Toast;
 
 
 public class MainActivity extends ActionBarActivity {
+
+    private CitySelectView selectView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
+        selectView = (CitySelectView) findViewById(R.id.cityview);
+        selectView.setOnResultSelectListener(
+                new CitySelectView.OnResultSelectListener() {
+                    @Override
+                    public void onResultSelected(boolean isFinish, String provience, String city, String district) {
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+                        String result = provience + city + district;
+                        if (isFinish) {
+                            Toast.makeText(MainActivity.this, "选择完成:结果 :" + result, Toast.LENGTH_SHORT).show();
+                        } else {
+                            Toast.makeText(MainActivity.this, "选择未完成:结果 :" + result, Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                }
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+        );
 
-        return super.onOptionsItemSelected(item);
+
     }
 }

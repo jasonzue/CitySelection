@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- 通用 -->
+    <color name="common_grey_line_color">#e1e3e6</color>
+    <color name="common_bg_blue_color">#359df6</color>
+    <color name="common_bg_light_blue_color">#3cb4ff</color>
+    <color name="common_bg_light_blue_line_color">#3B9CE1</color>
+
+    <color name="common_bg_light_yellow_color">#f4b42c</color>
+    <color name="common_black_text_color">#7a7c80</color>
+    <color name="common_orange_bg_color">#FF5026</color>
+    <color name="common_orange_line_color">#E74723</color>
+    <color name="common_dark_grey_bg_color">#D4D4D4</color>
+    <color name="common_bg_color">#F9F9F9</color>
+    <color name="common_black_color">#000000</color>
+
+    <color name="common_green_bg_color">#DFF2D7</color>
+    <color name="common_green_line_color">#cae5be</color>
+    <color name="common_red_bg_color">#f01046</color>
+    <color name="common_red_bg_press_color">#d40e3e</color>
+
+    <color name="common_trans_black_bg_color">#32000000</color>
+    <color name="dialog_grey_bg_color">#E7E7E7</color>
+    <color name="dialog_grey_line_color">#D4D4D4</color>
+
+    <color name="icon_bg_light_blue_color">#6fb6f8</color>
+    <color name="icon_bg_green_color">#34caad</color>
+
+
+</resources>
